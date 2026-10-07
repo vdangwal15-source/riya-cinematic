@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="A cinematic friendship story made for Riya.">
+  <title>Riya — A Story That Started at 8</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="loader-orb"></div>
+    <div class="loader-copy">
+      <span class="eyebrow">A PRIVATE LITTLE UNIVERSE</span>
+      <h1>Loading Riya's Story<span>...</span></h1>
+      <p>Some friendships don't start with a hello.<br>They start with childhood.</p>
+      <div class="loader-line"><i></i></div>
+    </div>
+  </div>
+
+  <canvas id="particles"></canvas>
+  <div class="noise"></div>
+  <div class="progress"><span></span></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <button class="menu-toggle magnetic" aria-label="Open story navigation"><span></span><span></span></button>
+  <aside class="story-nav">
+    <div class="nav-inner">
+      <span class="eyebrow">RIYA / STORY</span>
+      <button class="nav-close">×</button>
+      <nav>
+        <a href="#hero"><b>01</b> Beginning</a>
+        <a href="#memories"><b>02</b> Memories</a>
+        <a href="#dreams"><b>03</b> Dreams</a>
+        <a href="#volleyball"><b>04</b> Volleyball</a>
+        <a href="#mountains"><b>05</b> Mountains</a>
+        <a href="#gallery"><b>06</b> Today</a>
+        <a href="#forever"><b>07</b> Forever</a>
+      </nav>
+    </div>
+  </aside>
+
+  <main id="story">
+    <section id="hero" class="scene hero">
+      <div class="hero-glow"></div>
+      <div class="hero-copy">
+        <span class="eyebrow reveal">A FRIENDSHIP JOURNEY</span>
+        <h1 class="display reveal">A Friendship<br><em>That Started at 8.</em></h1>
+        <p class="lead reveal">And somehow, years later, you're still one of my favorite people.</p>
+        <button class="scroll-cue reveal magnetic" data-target="#memories">Scroll to enter the story <span>↓</span></button>
+      </div>
+      <div class="hero-photo-wrap photo-depth" data-depth="22">
+        <div class="photo-shadow"></div>
+        <img src="assets/riya-01.jpg" alt="Riya" class="hero-photo">
+        <div class="photo-frame"></div>
+      </div>
+      <div class="hero-orbit orbit-1"></div>
+      <div class="hero-orbit orbit-2"></div>
+      <div class="hero-meta"><span>01</span><span>RIYA</span><span>8 → NOW</span></div>
+    </section>
+
+    <section id="memories" class="scene memory-section">
+      <div class="section-index">02 / MEMORIES</div>
+      <div class="memory-copy">
+        <span class="eyebrow">THE BEGINNING</span>
+        <h2 class="title">It All Started<br><em>When We Were 8.</em></h2>
+        <p>We were just 8 years old when this friendship began. Neither of us probably knew how many memories, conversations, laughs and moments would come after that.</p>
+      </div>
+      <div class="memory-stage">
+        <figure class="float-photo p1"><img src="assets/riya-02.jpg" alt="Riya memory"></figure>
+        <figure class="float-photo p2"><img src="assets/riya-03.jpg" alt="Riya memory"></figure>
+        <figure class="float-photo p3"><img src="assets/riya-04.jpg" alt="Riya memory"></figure>
+        <div class="memory-word">MEMORIES</div>
+      </div>
+    </section>
+
+    <section class="scene timeline-section">
+      <div class="section-index">03 / YEARS</div>
+      <div class="timeline-head">
+        <span class="eyebrow">TIME MOVES. SOME THINGS DON'T.</span>
+        <h2 class="title">Years Passed.<br><em>The Friendship Stayed.</em></h2>
+      </div>
+      <div class="timeline-track">
+        <div class="timeline-line"></div>
+        <article class="time-card"><span>01</span><strong>Age 8</strong><p>Where it all began.</p></article>
+        <article class="time-card"><span>02</span><strong>Growing Up</strong><p>School days, random conversations and countless memories.</p></article>
+        <article class="time-card"><span>03</span><strong>Today</strong><p>Different dreams. Same friendship.</p></article>
+      </div>
+    </section>
+
+    <section id="dreams" class="scene dreams-section">
+      <div class="section-index">04 / DREAMS</div>
+      <div class="dreams-copy">
+        <span class="eyebrow">THE GIRL WITH BIG DREAMS</span>
+        <h2 class="title">And Then She Started<br><em>Chasing Bigger Dreams.</em></h2>
+      </div>
+      <div class="dream-cards">
+        <article class="dream-card tilt"><span>01</span><h3>B.COM</h3><p>Building her foundation.</p><div class="card-icon">⌘</div></article>
+        <article class="dream-card tilt featured"><span>02</span><h3>COMPANY<br>SECRETARY</h3><p>Working toward something bigger.</p><div class="card-icon">◎</div></article>
+        <article class="dream-card tilt"><span>03</span><h3>CS LEVEL 2</h3><p>One step closer.</p><div class="card-icon">↗</div></article>
+      </div>
+      <div class="edu-orbits"><i></i><i></i><i></i><i></i></div>
+    </section>
+
+    <section class="scene exam-section">
+      <div class="exam-paper">
+        <div class="paper-top">COMPANY SECRETARY</div>
+        <div class="paper-line big">FINAL LEVEL</div>
+        <div class="paper-line"></div><div class="paper-line"></div><div class="paper-line"></div>
+        <div class="paper-stamp">?</div>
+      </div>
+      <div class="exam-copy">
+        <span class="eyebrow">THE ONE THING THAT FEELS HUGE</span>
+        <h2 class="title">But There's One Thing<br><em>That Keeps Scaring Her...</em></h2>
+        <div class="exam-reveal">The Final CS Exam.</div>
+        <p class="exam-message">Fear doesn't mean you're not capable.<br>It means you care about what you're fighting for.</p>
+        <strong>One level at a time, Riya.</strong>
+      </div>
+    </section>
+
+    <section id="volleyball" class="scene volley-section">
+      <div class="court-grid"></div>
+      <div class="section-index">05 / PLAY</div>
+      <div class="volley-copy">
+        <span class="eyebrow">RESET MODE</span>
+        <h2 class="title">And Then There's<br><em>Volleyball.</em></h2>
+        <p>When books get heavy, the court gets lighter.</p>
+        <small>Because sometimes the best way to reset is to just play.</small>
+      </div>
+      <div class="volley-ball"><span></span></div>
+      <div class="volley-photo"><img src="assets/riya-05.jpg" alt="Riya"></div>
+    </section>
+
+    <section id="mountains" class="scene mountain-section">
+      <div class="mountain m-back"></div><div class="mountain m-mid"></div><div class="mountain m-front"></div>
+      <div class="mist"></div>
+      <div class="mountain-copy">
+        <span class="eyebrow">WHERE SHE LIKES TO BREATHE</span>
+        <h2 class="title">She Also Belongs<br><em>Somewhere Between the Mountains.</em></h2>
+        <p>Some places don't just give you a view.</p>
+        <strong>They give your mind a little room to breathe.</strong>
+      </div>
+      <div class="mountain-photo mp1"><img src="assets/riya-06.jpg" alt="Riya travelling"></div>
+      <div class="mountain-photo mp2"><img src="assets/riya-07.jpg" alt="Riya"></div>
+      <div class="sun"></div>
+    </section>
+
+    <section id="gallery" class="scene gallery-section">
+      <div class="section-index">06 / TODAY</div>
+      <div class="gallery-head">
+        <span class="eyebrow">HER PRESENT</span>
+        <h2 class="title">A Little Universe<br><em>Made of Memories.</em></h2>
+      </div>
+      <div class="photo-wall">
+        <button class="gallery-photo gp1" data-full="assets/riya-01.jpg"><img src="assets/riya-01.jpg" alt="Riya"></button>
+        <button class="gallery-photo gp2" data-full="assets/riya-02.jpg"><img src="assets/riya-02.jpg" alt="Riya"></button>
+        <button class="gallery-photo gp3" data-full="assets/riya-03.jpg"><img src="assets/riya-03.jpg" alt="Riya"></button>
+        <button class="gallery-photo gp4" data-full="assets/riya-04.jpg"><img src="assets/riya-04.jpg" alt="Riya"></button>
+        <button class="gallery-photo gp5" data-full="assets/riya-05.jpg"><img src="assets/riya-05.jpg" alt="Riya"></button>
+        <button class="gallery-photo gp6" data-full="assets/riya-06.jpg"><img src="assets/riya-06.jpg" alt="Riya"></button>
+        <button class="gallery-photo gp7" data-full="assets/riya-07.jpg"><img src="assets/riya-07.jpg" alt="Riya"></button>
+        <button class="gallery-photo gp8" data-full="assets/riya-08.jpg"><img src="assets/riya-08.jpg" alt="Riya"></button>
+      </div>
+      <p class="gallery-note">Move your cursor. Click a memory.</p>
+    </section>
+
+    <section class="scene video-section">
+      <div class="video-frame">
+        <video id="memoryVideo" src="assets/riya-video.mp4" muted playsinline preload="metadata" controls></video>
+        <div class="video-glass">MEMORY / MOVING</div>
+      </div>
+      <div class="video-copy">
+        <span class="eyebrow">A MOMENT IN MOTION</span>
+        <h2 class="title">Some Memories<br><em>Are Better When They Move.</em></h2>
+      </div>
+    </section>
+
+    <section class="scene becoming-section">
+      <div class="becoming-photo"><img src="assets/riya-08.jpg" alt="Riya"></div>
+      <div class="becoming-copy">
+        <span class="eyebrow">THE GIRL BEHIND THE DREAMS</span>
+        <h2 class="title">She's<br><em>Still Becoming.</em></h2>
+        <p>Dreams · Courage · Work · Growth · Adventure · Friendship</p>
+      </div>
+      <div class="orbit-words">
+        <span>Dreams</span><span>Courage</span><span>Work</span><span>Growth</span><span>Adventure</span><span>Friendship</span>
+      </div>
+    </section>
+
+    <section id="forever" class="scene final-section">
+      <div class="sunset"></div>
+      <div class="final-photo"><img src="assets/riya-01.jpg" alt="Riya"></div>
+      <div class="final-copy">
+        <span class="eyebrow">THE LAST PAGE</span>
+        <h2 class="final-line">8 Years Old Then.</h2>
+        <h2 class="final-line">Still My Best Friend Now.</h2>
+        <h2 class="final-line">And Hopefully,<br>For All The Years Ahead.</h2>
+        <p>Keep chasing your dreams, Riya.<br>Keep playing. Keep travelling. Keep climbing.<br>And when CS gets scary... remember how far you've already come.</p>
+        <small>— From the friend who has known you since 8.</small>
+        <button id="replay" class="replay magnetic">Replay Our Story ↻</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" aria-hidden="true">
+    <button class="lightbox-close">×</button>
+    <img src="" alt="Expanded Riya memory">
+  </div>
+
+  <div class="music-player" id="musicPlayer">
+    <button id="playStory">♫ <span>Play Story</span></button>
+    <div class="music-status">Add <b>assets/riya-song.mp3</b> for the personal soundtrack.</div>
+    <audio id="storyAudio" preload="none"></audio>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.11/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
